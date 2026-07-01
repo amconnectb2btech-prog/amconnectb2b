@@ -11,6 +11,7 @@ export default function Logo({ className = '', variant = 'dark' }) {
 
   return (
     <Link to="/" className={`inline-flex items-center gap-1 ${className}`}>
+      
       {/* Logo Icon Container */}
       <div className="flex items-center justify-center h-10 overflow-hidden">
         <img 
