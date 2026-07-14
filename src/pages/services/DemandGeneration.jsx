@@ -25,11 +25,11 @@ export default function DemandGeneration() {
       ]}
       faqs={[
         { q: 'Do you produce the content yourselves?',           a: 'Yes  we have an in-house content team. We can also work with your existing content function if you have one.' },
-        { q: 'What\u2019s a realistic timeline to impact?',       a: 'Pipeline impact usually shows up in months 3–4. Anyone promising results in week two is selling lead lists, not demand.' },
-        { q: 'How much paid media should I expect to spend?',    a: 'Depends on ACV and TAM. For a $30K ACV B2B SaaS, $20–60K/month is a useful starting range. We\u2019ll model it before you commit a rupee.' },
+        { q: 'What\u2019s a realistic timeline to impact?',       a: 'Pipeline impact usually shows up in months 3-4. Anyone promising results in week two is selling lead lists, not demand.' },
+        { q: 'How much paid media should I expect to spend?',    a: 'Depends on ACV and TAM. For a $30K ACV B2B SaaS, $20-60K/month is a useful starting range. We\u2019ll model it before you commit a rupee.' },
       ]}
       metrics={[
-        { n: '2×',  l: 'Pipeline value within two quarters' },
+        { n: '2x',  l: 'Pipeline value within two quarters' },
         { n: '35%', l: 'MQL → SQL conversion improvement' },
         { n: '50%', l: 'Lower customer acquisition cost' },
       ]}

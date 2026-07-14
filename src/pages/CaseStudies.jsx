@@ -6,22 +6,42 @@ import { SkeletonCard } from '../components/ui/PageShimmer.jsx'
 import CTA from '../components/sections/CTA.jsx'
 
 const FALLBACK = [
-  { id: 'fb-1', client: 'Northstar Cloud', sector: 'B2B SaaS', headline: 'Rebuilt a stalled outbound motion into a 20× ROI engine in two quarters.', summary: 'After a year of generic agency work, Northstar\'s pipeline was thin and noisy. We rebuilt the ICP, redesigned every touchpoint, and centred the program on BANT-qualified meetings  not vanity volume.', metrics: [{ n: '20×', l: 'ROI in 12 months' }, { n: '750+', l: 'qualified opportunities' }, { n: '50%', l: 'lower CAC' }] },
-  { id: 'fb-2', client: 'Levermark', sector: 'Enterprise FinTech', headline: 'From cold-list spray to a structured demand engine inside one quarter.', summary: 'Sequenced content syndication with MQL nurture and a dedicated appointment desk. Result: doubled pipeline value with the same headcount.', metrics: [{ n: '2×', l: 'pipeline value' }, { n: '35%', l: 'MQL → SQL' }, { n: '14d', l: 'avg follow-up' }] },
-  { id: 'fb-3', client: 'Polaris Data', sector: 'Data Infrastructure', headline: 'Moved enterprise pipeline from one-meeting-per-month to one-per-week, sustainably.', summary: 'A two-quarter engagement focused on six-figure ACV accounts. By month four, AEs held qualified discovery calls weekly with named accounts they\'d previously failed to reach.', metrics: [{ n: '4×', l: 'enterprise meetings' }, { n: '85%', l: 'show-up rate' }, { n: '60+', l: 'accounts engaged' }] },
+  { id: 'fb-1', client: 'Northstar Cloud', sector: 'B2B SaaS', headline: 'Rebuilt a stalled outbound motion into a 20x ROI engine in two quarters.', summary: 'After a year of generic agency work, Northstar\'s pipeline was thin and noisy. We rebuilt the ICP, redesigned every touchpoint, and centred the program on BANT-qualified meetings  not vanity volume.', metrics: [{ n: '20x', l: 'ROI in 12 months' }, { n: '750+', l: 'qualified opportunities' }, { n: '50%', l: 'lower CAC' }] },
+  { id: 'fb-2', client: 'Levermark', sector: 'Enterprise FinTech', headline: 'From cold-list spray to a structured demand engine inside one quarter.', summary: 'Sequenced content syndication with MQL nurture and a dedicated appointment desk. Result: doubled pipeline value with the same headcount.', metrics: [{ n: '2x', l: 'pipeline value' }, { n: '35%', l: 'MQL → SQL' }, { n: '14d', l: 'avg follow-up' }] },
+  { id: 'fb-3', client: 'Polaris Data', sector: 'Data Infrastructure', headline: 'Moved enterprise pipeline from one-meeting-per-month to one-per-week, sustainably.', summary: 'A two-quarter engagement focused on six-figure ACV accounts. By month four, AEs held qualified discovery calls weekly with named accounts they\'d previously failed to reach.', metrics: [{ n: '4x', l: 'enterprise meetings' }, { n: '85%', l: 'show-up rate' }, { n: '60+', l: 'accounts engaged' }] },
 ]
 
 export default function CaseStudies() {
   const show = useFeature('showCaseStudies')
   const [items, setItems] = useState(null)
 
+  // useEffect(() => {
+  //   let alive = true
+  //   getCaseStudies()
+  //     .then((rows) => alive && setItems(rows?.length ? rows : FALLBACK))
+  //     .catch(() => alive && setItems(FALLBACK))
+  //   return () => { alive = false }
+  // }, [])
+
   useEffect(() => {
-    let alive = true
-    getCaseStudies()
-      .then((rows) => alive && setItems(rows?.length ? rows : FALLBACK))
-      .catch(() => alive && setItems(FALLBACK))
-    return () => { alive = false }
-  }, [])
+  let alive = true
+  
+  getCaseStudies()
+    .then((rows) => {
+      if (alive) {
+        //console.log("Firestore Case Studies loaded:", rows);
+        setItems(rows?.length ? rows : FALLBACK);
+      }
+    })
+    .catch((err) => {
+      if (alive) {
+        console.error("Firebase Case Studies Retrieval Failed:", err); // Essential log
+        setItems(FALLBACK);
+      }
+    })
+    
+  return () => { alive = false }
+}, [])
 
   if (!show) {
     return (

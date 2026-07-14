@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <LogoCloud />
       <Stats />
+      <LogoCloud />
       <ServicesGrid />
       <Process />
       <Features />

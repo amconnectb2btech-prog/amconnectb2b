@@ -30,6 +30,8 @@ export async function getSiteSettings() {
   }
 }
 
+
+
 export const defaultSiteSettings = {
   theme: 'blue', // blue | green | red | violet | amber | ink
   features: {
@@ -49,8 +51,7 @@ export const defaultSiteSettings = {
   contact: {
     email: 'info@amconnectb2b.com',
     phone: '+91 84 5987 9551',
-    address:
-      'Bunglow No 7, Sno 181, General Kariappa Rd, Khadki, Pune City, Pune 411003, Maharashtra',
+    address: 'Office No 15A, 4th Floor, City Vista, Tower A, Suite # 1411, Fountain Road, Kharadi, Vadgaon Sheri, Pune, Pune City, Maharashtra, India, 41101',
   },
 }
 
@@ -103,7 +104,8 @@ export async function getTestimonials() {
     )
     const snap = await getDocs(q)
     return snap.docs.map((d) => ({ id: d.id, ...d.data() }))
-  } catch {
+  } catch (err) {
+    console.error('[services] getTestimonials failed:', err)
     return []
   }
 }
@@ -117,7 +119,8 @@ export async function getCaseStudies() {
     )
     const snap = await getDocs(q)
     return snap.docs.map((d) => ({ id: d.id, ...d.data() }))
-  } catch {
+  } catch (err) {
+    console.error('[services] getCaseStudies failed:', err)
     return []
   }
 }

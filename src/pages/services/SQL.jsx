@@ -30,7 +30,7 @@ export default function SQL() {
       ]}
       metrics={[
         { n: '<1h',  l: 'Median SQL → AE routing time' },
-        { n: '4.5×', l: 'Opportunity creation vs. baseline' },
+        { n: '4.5x', l: 'Opportunity creation vs. baseline' },
         { n: '60%',  l: 'Shorter time from SQL to first meeting' },
       ]}
       relatedSlug="content-syndication"

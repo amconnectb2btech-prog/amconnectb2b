@@ -2,12 +2,12 @@ import { Plus } from 'lucide-react'
 import SectionHeading from '../ui/SectionHeading.jsx'
 
 const FAQS = [
-  { q: 'How quickly can you start delivering qualified leads?',          a: 'Most engagements move into live operations in week three. The first two weeks are spent on discovery, ICP modelling and engine setup — skipping this typically costs more than it saves.' },
+  { q: 'How quickly can you start delivering qualified leads?',          a: 'Most engagements move into live operations in week three. The first two weeks are spent on discovery, ICP modelling and engine setup skipping this typically costs more than it saves.' },
   { q: 'What\u2019s a typical engagement size and length?',                a: 'Most engagements run six months with a clean handover at the end. Pricing depends on scope and target volume but typically starts at $8K/month for single-service programs.' },
-  { q: 'Do you guarantee a number of leads or meetings?',                a: 'We agree to clear monthly targets at kickoff, tied to qualified meetings and pipeline impact. We don\u2019t guarantee volume — guarantees almost always create the wrong incentives around lead quality.' },
-  { q: 'Who owns the data and contacts you generate?',                   a: 'You do. Every contact, score, recording and learning lives in your CRM from day one. When the engagement ends, you keep everything — no clawbacks, no walled garden.' },
-  { q: 'Can you work with our existing sales / marketing team?',         a: 'Yes — that\u2019s how every engagement runs. We operate as an in-house extension with daily Slack standups, shared dashboards, and your team in every key meeting.' },
-  { q: 'Which regions and industries do you focus on?',                  a: 'B2B software, fintech and enterprise platforms selling into India, Southeast Asia, the EU and the US. Best fit for ACVs above $10K with sales cycles of 30–180 days.' },
+  { q: 'Do you guarantee a number of leads or meetings?',                a: 'We agree to clear monthly targets at kickoff, tied to qualified meetings and pipeline impact. We don\u2019t guarantee volume guarantees almost always create the wrong incentives around lead quality.' },
+  { q: 'Who owns the data and contacts you generate?',                   a: 'You do. Every contact, score, recording and learning lives in your CRM from day one. When the engagement ends, you keep everything no clawbacks, no walled garden.' },
+  { q: 'Can you work with our existing sales / marketing team?',         a: 'Yes that\u2019s how every engagement runs. We operate as an in-house extension with daily Slack standups, shared dashboards, and your team in every key meeting.' },
+  { q: 'Which regions and industries do you focus on?',                  a: 'B2B software, fintech and enterprise platforms selling into India, Southeast Asia, the EU and the US. Best fit for ACVs above $10K with sales cycles of 30-180 days.' },
 ]
 
 export default function FAQ() {

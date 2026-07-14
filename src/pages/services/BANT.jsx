@@ -24,13 +24,13 @@ export default function BANT() {
         { t: 'Tune the gate',     d: 'Monthly review of rejection reasons and close-rate by BANT score, so the gate stays calibrated to what\u2019s actually converting.' },
       ]}
       faqs={[
-        { q: 'What\u2019s the typical pass rate?',             a: '35–50% of contacts that look qualified on paper pass live BANT verification. The rejected half is where most of the value is.' },
+        { q: 'What\u2019s the typical pass rate?',             a: '35-50% of contacts that look qualified on paper pass live BANT verification. The rejected half is where most of the value is.' },
         { q: 'Do you use AI for verification?',                a: 'No. BANT verification is a human conversation. We use AI to summarise calls afterwards, but the verification itself is done by trained operators.' },
         { q: 'How do AEs receive the leads?',                   a: 'A CRM record with the BANT scorecard, the call recording, and a one-paragraph context summary written by the verifier.' },
       ]}
       metrics={[
         { n: '45%',  l: 'Live pass rate on initial BANT review' },
-        { n: '3.2×', l: 'Higher close rate vs. unverified leads' },
+        { n: '3.2x', l: 'Higher close rate vs. unverified leads' },
         { n: '100%', l: 'Leads documented with scorecard' },
       ]}
       relatedSlug="mql"

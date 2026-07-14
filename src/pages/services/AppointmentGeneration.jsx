@@ -24,14 +24,14 @@ export default function AppointmentGeneration() {
         { t: 'Measure and tune',              d: 'Weekly cohort review on show rate, opportunity creation and downstream pipeline. We tune monthly.' },
       ]}
       faqs={[
-        { q: 'What\u2019s a realistic show-up rate?',         a: '78–85% sustained. North of 90% usually means too-lenient qualification; below 70% means the booking signal isn\u2019t strong enough.' },
+        { q: 'What\u2019s a realistic show-up rate?',         a: '78-85% sustained. North of 90% usually means too-lenient qualification; below 70% means the booking signal isn\u2019t strong enough.' },
         { q: 'Who is actually doing the outreach?',            a: 'Senior SDRs on our team, named on your engagement. No outsourced overseas centres, no rotating juniors.' },
         { q: 'What if a meeting doesn\u2019t convert?',        a: 'We don\u2019t guarantee conversion  your sales process owns that. But we do report opportunity-creation rate by SDR and segment.' },
       ]}
       metrics={[
         { n: '80%+', l: 'Sustained meeting show-up rate' },
         { n: '40+',  l: 'Qualified meetings booked per month' },
-        { n: '3×',   l: 'Opportunity creation vs. baseline' },
+        { n: '3x',   l: 'Opportunity creation vs. baseline' },
       ]}
       relatedSlug="bant"
       relatedName="BANT-Qualified Leads"

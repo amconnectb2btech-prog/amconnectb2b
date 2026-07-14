@@ -31,7 +31,7 @@ export default function LeadGeneration() {
       metrics={[
         { n: '750+', l: 'Verified contacts in a typical month' },
         { n: '92%',  l: 'Data accuracy on email and phone' },
-        { n: '6×',   l: 'Pipeline lift vs. prior lead programs' },
+        { n: '6x',   l: 'Pipeline lift vs. prior lead programs' },
       ]}
       relatedSlug="demand-generation"
       relatedName="Demand Generation"

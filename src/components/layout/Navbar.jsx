@@ -172,7 +172,7 @@ export default function Navbar() {
       {/* Mobile drawer */}
       {open && (
         <div className="lg:hidden fixed inset-0 z-50 bg-white overflow-y-auto">
-          <div className="container-app">
+          <div className="container-app pb-20">
             <div className="flex items-center justify-between h-16">
               <Logo />
               <button onClick={() => setOpen(false)} className="p-2 -mr-2" aria-label="Close">

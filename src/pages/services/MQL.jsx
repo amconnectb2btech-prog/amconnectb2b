@@ -24,13 +24,13 @@ export default function MQL() {
         { t: 'Tune continuously', d: 'Monthly review of cohort behaviour. Retire content that under-performs, double down on what works.' },
       ]}
       faqs={[
-        { q: 'How long is the typical nurture window?',         a: '60–180 days depending on sales cycle. We segment sequences so a 90-day buyer isn\u2019t getting 30-day messaging.' },
+        { q: 'How long is the typical nurture window?',         a: '60-180 days depending on sales cycle. We segment sequences so a 90-day buyer isn\u2019t getting 30-day messaging.' },
         { q: 'Can you work inside our existing MA platform?',   a: 'Yes. Marketo, HubSpot, Pardot, Customer.io, Eloqua  we work inside whatever you\u2019re using.' },
         { q: 'What if our MQLs aren\u2019t converting today?',  a: 'Usually a hand-off problem, not an MQL problem. We start by auditing what happens between MQL and the first SDR conversation.' },
       ]}
       metrics={[
         { n: '35%', l: 'MQL → SQL conversion uplift' },
-        { n: '5×',  l: 'Engagement on nurture content' },
+        { n: '5x',  l: 'Engagement on nurture content' },
         { n: '40%', l: 'Reduction in unsubscribe rate' },
       ]}
       relatedSlug="sql"
