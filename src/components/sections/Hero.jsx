@@ -2,7 +2,8 @@ import { Link } from 'react-router-dom'
 import { ArrowRight, ArrowUpRight } from 'lucide-react'
 
 import heroBg from "../../assets/hero_bg.mov";
-import heroBgMobile from "../../assets/hero_mobile_bg.mp4"
+import heroBgMobile from "../../assets/hero_mobile_bg.mp4";
+import heroBgPoster from "../../assets/hero_poster_bg.avif";
 
 export default function Hero() {
   const tickerItems = [
@@ -46,6 +47,7 @@ export default function Hero() {
           muted
           loop
           playsInline
+          poster={heroBgPoster}
         >
           <source src={heroBgMobile} type="video/mp4" />
         </video>
@@ -57,7 +59,7 @@ export default function Hero() {
           muted
           loop
           playsInline
-          poster="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=2000&q=80"
+          poster={heroBgPoster}
         >
           <source src={heroBg} type="video/mp4" />
         </video>
